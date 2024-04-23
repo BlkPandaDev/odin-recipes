@@ -26,6 +26,6 @@ This project offers a great opportunity to apply my knowledge of HTML in a pract
 
 ![Preview of Odin Recipes Homepage](images/Homepage.jpg)
 
-![Preview of Odin Recipes page](images/lasagna page.jpg)
+![Preview of Odin Recipes page](images/lasagnapage.jpg)
 
-![Preview of Odin Recipes page](images/chicken page.jpg)
+![Preview of Odin Recipes page](images/chickenpage.jpg)
