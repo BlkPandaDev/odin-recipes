@@ -1,40 +1,95 @@
-body {
-    font-family: Arial, sans-serif;
+/* Resetting default margin and padding */
+* {
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    box-sizing: border-box;
 }
 
-h1 {
+/* Basic styling for the whole page */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header, footer {
     text-align: center;
+    margin-bottom: 20px;
+}
+
+#recipe-title {
     color: #333;
-    margin-top: 50px;
+    font-size: 28px;
+    margin-bottom: 10px;
 }
 
-ul {
-    list-style-type: none;
-    padding: 0;
-    text-align: center;
-}
-
-ul li {
-    margin: 20px 0;
-}
-
-ul li a {
+#back-link {
     text-decoration: none;
     color: #007bff;
-    font-size: 24px;
+    margin-bottom: 20px;
+    display: block;
     transition: color 0.3s ease;
 }
 
-ul li a:hover {
+#back-link:hover {
     color: #0056b3;
 }
 
+.recipe-details {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
 img {
-    display: block;
-    margin: 40px auto;
-    border-radius: 10px;
-    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    max-width: 100%;
+}
+
+section {
+    margin-bottom: 30px;
+}
+
+h2 {
+    color: #333;
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+ul, ol {
+    margin-left: 20px;
+}
+
+ul li, ol li {
+    margin-bottom: 10px;
+}
+
+footer {
+    color: #777;
+    font-size: 14px;
+}
+
+/* Styling for ingredients and steps */
+.ingredients-list, .steps-list {
+    list-style: none;
+}
+
+.ingredients-list li:before, .steps-list li:before {
+    content: "•";
+    color: #007bff;
+    font-weight: bold;
+    margin-right: 5px;
+}
+
+.steps-list li {
+    margin-bottom: 15px;
+    line-height: 1.5;
 }
