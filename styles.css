@@ -1,95 +1,88 @@
-/* Resetting default margin and padding */
-* {
+/* Reset default browser styles */
+body, h1, h2, h3, h4, h5, h6, p, ul, ol, li, figure, figcaption, blockquote, dl, dd {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 
-/* Basic styling for the whole page */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f8f8f8;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    background-color: #f7f7f7;
+    color: #333;
 }
 
+/* Added a background color to the container */
 .container {
-    max-width: 800px;
+    max-width: 900px;
     margin: 0 auto;
     padding: 20px;
-}
-
-header, footer {
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-#recipe-title {
-    color: #333;
-    font-size: 28px;
-    margin-bottom: 10px;
-}
-
-#back-link {
-    text-decoration: none;
-    color: #007bff;
-    margin-bottom: 20px;
-    display: block;
-    transition: color 0.3s ease;
-}
-
-#back-link:hover {
-    color: #0056b3;
-}
-
-.recipe-details {
     background-color: #fff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
 }
 
-img {
-    margin-bottom: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    max-width: 100%;
+header {
+    text-align: center;
+    margin-bottom: 40px;
 }
 
-section {
-    margin-bottom: 30px;
-}
-
-h2 {
+#main-title {
+    font-size: 36px;
     color: #333;
-    font-size: 22px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Added background color and padding to the content */
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #f9f9f9;
+    padding: 30px;
+}
+
+/* Added background color, padding, and border radius to the recipe links container */
+.recipe-links {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+/* Added background color and border radius to the recipe links */
+.recipe-links span {
+    margin: 0 15px;
+    background-color: #00ff9d;
+    padding: 10px 20px;
+    border-radius: 8px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
     margin-bottom: 10px;
 }
 
-ul, ol {
-    margin-left: 20px;
+/* Changed link color and added background color on hover */
+nav ul li a {
+    text-decoration: none;
+    color: #fff; /* Changed link color */
+    font-size: 20px;
+    transition: background-color 0.3s ease; /* Added transition */
 }
 
-ul li, ol li {
-    margin-bottom: 10px;
+nav ul li a:hover {
+    background-color: #cc0000; /* Added background color on hover */
 }
 
 footer {
+    margin-top: 40px;
+    text-align: center;
     color: #777;
-    font-size: 14px;
-}
-
-/* Styling for ingredients and steps */
-.ingredients-list, .steps-list {
-    list-style: none;
-}
-
-.ingredients-list li:before, .steps-list li:before {
-    content: "•";
-    color: #007bff;
-    font-weight: bold;
-    margin-right: 5px;
-}
-
-.steps-list li {
-    margin-bottom: 15px;
-    line-height: 1.5;
 }
